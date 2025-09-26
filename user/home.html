@@ -72,6 +72,7 @@
                 >
               </li>
               <li><a href="detail.html">ยื่นสอบหัวข้อ</a></li>
+              <li><a href="project_progress.html">ตรวจสอบความคืบหน้า</a></li>
             </ul>
             <div class="dropdown dropdown-end mr-3">
               <div
@@ -81,7 +82,7 @@
               >
                 <div class="w-10 rounded-full">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    src="https://img.daisyui.com/images/profile/demo/2@94.webp"
                     alt="profile"
                   />
                 </div>
@@ -90,9 +91,6 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 border border-base-300 rounded-box z-1 mt-4 w-52 p-2 shadow text-base-content"
               >
-                <li><a href="#">ตรวจสอบความคืบหน้า</a></li>
-                <li><a href="#">ผลการสอบหัวข้อ / โครงงาน</a></li>
-                <li class="divider"></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="../index.html">Logout</a></li>
               </ul>
@@ -134,7 +132,7 @@
                       <th width="40%">รายละเอียด</th>
                       <th>ประเภทโครงงาน</th>
                       <th>ครูที่ปรึกษา</th>
-                      <th class="text-center">สถานะ</th>
+                      <th class="text-center">สถานะสอบหัวข้อ</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -146,11 +144,12 @@
                       <td>โครงงานพิเศษ</td>
                       <td>ผศ.ดร.นิติการ นาคเจือทอง</td>
                       <td class="text-center">
-                        <button
-                          class="bg-success text-success-content p-2 rounded w-16"
+                        <a
+                          href="after/home.html"
+                          class="btn btn-success text-success-content font-light rounded"
                         >
                           ผ่าน
-                        </button>
+                        </a>
                       </td>
                     </tr>
                     <!-- row 2 -->
@@ -161,11 +160,12 @@
                       <td>โครงงานสหกิจ</td>
                       <td>ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</td>
                       <td class="text-center">
-                        <button
-                          class="bg-warning text-warning-content p-2 rounded w-16"
+                        <a
+                          href="detail_fix.html"
+                          class="btn btn-warning text-warning-content font-light rounded"
                         >
                           แก้ไข
-                        </button>
+                        </a>
                       </td>
                     </tr>
                     <!-- row 3 -->
@@ -176,10 +176,25 @@
                       <td>โครงงานพิเศษ</td>
                       <td>อ.ดร.วัชรชัย คงศิริวัฒนา</td>
                       <td class="text-center">
-                        <button
-                          class="bg-error text-error-content p-2 rounded w-16"
+                        <a
+                          href="detail.html"
+                          class="btn btn-error text-error-content font-light rounded"
                         >
                           ไม่ผ่าน
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>Yancy Tear</td>
+                      <td>Computer Networks</td>
+                      <td>โครงงานพิเศษ</td>
+                      <td>ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</td>
+                      <td class="text-center">
+                        <button
+                          class="btn btn-info text-info-content font-light rounded"
+                        >
+                          รอสอบ
                         </button>
                       </td>
                     </tr>
@@ -200,8 +215,7 @@
           <!-- Sidebar content here -->
           <li><a href="home.html">หน้าหลัก</a></li>
           <li><a href="detail.html">ยื่นสอบหัวข้อ / สอบจบ</a></li>
-          <li><a href="#">ตรวจสอบความคืบหน้า</a></li>
-          <li><a href="#">ผลการสอบหัวข้อ / โครงงาน</a></li>
+          <li><a href="project_progress.html">ตรวจสอบความคืบหน้า</a></li>
         </ul>
       </div>
     </div>

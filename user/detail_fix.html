@@ -121,7 +121,7 @@
             <div class="p-6 w-full">
               <div class="flex justify-between">
                 <h1 class="text-2xl font-bold mb-6">ยื่นสอบหัวข้อ</h1>
-                <span class="badge badge-soft badge-neutral badge-xl">ยังไม่เคยยื่นสอบ</span>
+                <span class="badge badge-warning badge-xl">แก้ไขรายละเอียด</span>
               </div>
               <form class="form-control">
                 <fieldset
@@ -129,12 +129,12 @@
                 >
                   <div class="grid grid-cols-3 gap-4">
                     <div class="flex flex-col space-y-2">
-                      <label class="label font-bold text-base-content text-base"
-                        >ชื่อโครงงาน</label
+                      <label class="label font-bold text-base-content text-base">ชื่อโครงงาน</label
                       >
                       <input
                         type="text"
                         class="input input-bordered w-full"
+                        value="Hart Hagerty"
                         placeholder="ชื่อโครงงาน"
                         required
                       />
@@ -154,7 +154,7 @@
                         <label class="label font-bold text-base-content text-base">ประเภทโครงงาน</label>
                         <select class="select w-full">
                             <option>โครงงานพิเศษ</option>
-                            <option>โครงงานสหกิจ</option>
+                            <option selected>โครงงานสหกิจ</option>
                         </select>
                     </div>
                   </div>
@@ -211,7 +211,7 @@
                       class="textarea textarea-bordered w-full h-32"
                       placeholder="รายละเอียด"
                       required
-                    ></textarea>
+                    >Desktop Support Technician</textarea>
                   </div>
                   <div class="flex flex-col space-y-2">
                     <label class="label font-bold text-base-content text-base"
@@ -252,7 +252,7 @@
                   </div>
                   <div class="flex justify-end space-x-2">
                     <input type="reset" class="btn btn-error text-white" value="ยกเลิก"></input>
-                    <a href="progress.html" class="btn btn-info">ยื่นสอบหัวข้อ</a>
+                    <a href="home.html" class="btn btn-info">ยื่นสอบหัวข้อ</a>
                   </div>
                 </fieldset>
               </form>
