@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ระบบการจัดการข้อมูลโครงงานพิเศษ และโครงงานสหกิจ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="drawer">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="navbar bg-primary w-full text-primary-content">
+          <div class="flex-none lg:hidden">
+            <label
+              for="my-drawer-3"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <div class="flex-1 px-2">
+            <p class="btn btn-ghost text-lg font-light hover:font-bold">ระบบการจัดการข้อมูลโครงงานพิเศษ</p>
+          </div>
+          <div class="flex items-center space-x-3">
+            <ul class="hidden lg:flex menu menu-horizontal px-1">
+              <li><a href="homde.html" class="font-bold underline underline-offset-4">หน้าหลัก</a></li>
+              <li><a href="detail.html">ยื่นสอบหัวข้อ / สอบจบ</a></li>
+            </ul>
+            <div class="dropdown dropdown-end mr-3">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle avatar"
+              >
+                <div class="w-10 rounded-full">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    alt="profile"
+                  />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 border border-base-300 rounded-box z-1 mt-4 w-52 p-2 shadow text-base-content"
+              >
+                <li><a href="#">ตรวจสอบความคืบหน้า</a></li>
+                <li><a href="#">ผลการสอบหัวข้อ / โครงงาน</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="../index.html">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Page content here -->
+        <main class="bg-base-200 min-h-screen">
+          <div class="flex gap-x-6">
+            <div class="bg-base-300 h-screen w-72 px-4 py-6">
+              <div class="flex flex-col gap-y-2">
+                <div class="btn hover:bg-info hover:text-info-content border border-neutral">
+                  ดาวน์โหลดคู่มือการจัดทำเล่มโครงงาน
+                </div>
+                <div class="divider"></div>
+                <a href="" class="hover:text-info duration-200">- ตรวจสอบตารางสอบจบ</a>
+                <a href="" class="hover:text-info duration-200">- ตรวจสอบตารางสอบหัวข้อ</a>
+              </div>
+            </div>
+            <div class="bg-blue-500 h-screen">
+              
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="drawer-side lg:hidden">
+        <label
+          for="my-drawer-3"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul class="menu bg-base-200 min-h-full w-80 p-4">
+          <!-- Sidebar content here -->
+          <li><a href="home.html">หน้าหลัก</a></li>
+          <li><a href="detail.html">ยื่นสอบหัวข้อ / สอบจบ</a></li>
+          <li><a href="#">ตรวจสอบความคืบหน้า</a></li>
+          <li><a href="#">ผลการสอบหัวข้อ / โครงงาน</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <!-- <footer class="footer md:footer-horizontal p-4 bg-base-200">
+        <nav>
+            <h6 class="footer-tittle md:text-center w-full">Member 1</h6>
+            <p class="leading-8">
+                <p><span class="font-bold">ชื่อ:</span> นายวุฒิพงษ์ วังรัตน์</p>
+                <p><span class="font-bold">รหัสนักศึกษา:</span> 6806022510106</p>
+                <p><span class="font-bold">สาขา:</span> เทคโนโลยีและการจัดการอุตสาหกรรม</p>
+            </p>
+        </nav>
+        <nav>
+            <h6 class="footer-tittle md:text-center w-full">Member 2</h6>
+            <p class="leading-8">
+                <p><span class="font-bold">ชื่อ:</span> นายกิตติทัษน์ พุ่มเจริญ</p>
+                <p><span class="font-bold">รหัสนักศึกษา:</span> </p>
+                <p><span class="font-bold">สาขา:</span> เทคโนโลยีและการจัดการอุตสาหกรรม</p>
+            </p>
+        </nav>
+        <nav>
+            <h6 class="footer-tittle md:text-center w-full">Member 3</h6>
+            <p class="leading-8">
+                <p><span class="font-bold">ชื่อ:</span> นายพลากร แพทย์นุเคราะห์</p>
+                <p><span class="font-bold">รหัสนักศึกษา:</span> </p>
+                <p><span class="font-bold">สาขา:</span> เทคโนโลยีและการจัดการอุตสาหกรรม</p>
+            </p>
+        </nav>
+    </footer> -->
+  </body>
+</html>
