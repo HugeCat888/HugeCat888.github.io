@@ -58,20 +58,22 @@
             </label>
           </div>
           <div class="flex-1 px-2">
-            <a href="home.html" class="btn btn-ghost text-lg font-light hover:font-bold">
+            <a href="../home.html" class="btn btn-ghost text-lg font-light hover:font-bold">
               ระบบการจัดการข้อมูลโครงงานพิเศษ
             </a>
           </div>
           <div class="flex items-center space-x-3">
             <ul class="hidden lg:flex menu menu-horizontal px-1">
               <li>
+                <a href="home.html">หน้าหลัก</a>
+              </li>
+              <li>
                 <a
-                  href="home.html"
-                  >หน้าหลัก</a
+                  href="../detail.html"
+                  >ยื่นสอบหัวข้อ</a
                 >
               </li>
-              <li><a href="detail.html">ยื่นสอบหัวข้อ</a></li>
-              <li><a href="project_progress.html" class="font-bold underline underline-offset-4">ตรวจสอบความคืบหน้า</a></li>
+              <li><a href="project_progress.html">ตรวจสอบความคืบหน้า</a></li>
             </ul>
             <div class="dropdown dropdown-end mr-3">
               <div
@@ -91,7 +93,7 @@
                 class="menu menu-sm dropdown-content bg-base-100 border border-base-300 rounded-box z-1 mt-4 w-52 p-2 shadow text-base-content"
               >
                 <li><a href="#">Settings</a></li>
-                <li><a href="../index.html">Logout</a></li>
+                <li><a href="../../index.html">Logout</a></li>
               </ul>
             </div>
           </div>
@@ -116,13 +118,65 @@
               </div>
             </div>
             <div class="p-6 w-full">
-              <h1 class="text-2xl font-bold mb-6">
-                ความคืบหน้าโครงงาน
-              </h1>
-              <div class="flex items-center w-full rounded-box bg-base-200 border border-base-300 p-4">
-                ยังไม่มีโครงงาน
-                <a href="home.html" class="btn btn-primary ml-2"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
-              </div>
+              <h1 class="text-2xl font-bold mb-6">รายละเอียดสัปดาห์ที่ 1</h1>
+              <form class="form-control">
+                <fieldset
+                  class="fieldset bg-gray-100 border border-base-200 rounded-box w-full h-full p-6 space-y-4"
+                >
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col space-y-2">
+                      <label class="label font-bold text-base-content text-base">ชื่อเรื่อง</label
+                      >
+                      <input
+                        type="text"
+                        class="input input-bordered w-full"
+                        placeholder="สัปดาห์ที่ 1"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="label font-bold text-base-content text-base"
+                            >จำนวนสมาชิก</label
+                        >
+                        <select class="select w-full" disabled>
+                            <option selected>1 คน</option>
+                            <option>2 คน</option>
+                            <option>3 คน</option>
+                            <option>4 คน</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="label font-bold text-base-content text-base">ประเภทโครงงาน</label>
+                        <select class="select w-full" disabled>
+                            <option>โครงงานพิเศษ</option>
+                            <option>โครงงานสหกิจ</option>
+                        </select>
+                    </div>
+                  </div>
+                  <p class="font-bold text-base">สถานะความคืบหน้าตอนนี้ : 0 %</p>
+                  <div>
+                    <progress class="progress progress-success w-full" value="0" max="100"></progress>
+                  </div>
+                  <div class="flex flex-col space-y-2">
+                    <label class="label font-bold text-base-content text-base">รายละเอียดความคืบหน้า</label>
+                    <textarea
+                      class="textarea textarea-bordered w-full h-32"
+                      placeholder="รายละเอียด"
+                      required
+                    >Quality Control Specialist</textarea>
+                  </div>
+                  <div class="space-y-2">
+                    <label class="label font-bold text-base-content text-base">ไฟล์</label>
+                    <input
+                      type="file"
+                      class="file-input file-input-bordered w-full"
+                    />
+                  </div>
+                  <div class="flex justify-end space-x-2">
+                    <a href="../home" class="btn btn-error text-white">ยกเลิก</a>
+                    <a href="home.html" class="btn btn-info">อัปเดต</a>
+                  </div>
+                </fieldset>
+              </form>
             </div>
           </div>
         </main>
@@ -135,9 +189,9 @@
         ></label>
         <ul class="menu bg-base-200 min-h-full w-80 p-4">
           <!-- Sidebar content here -->
-          <li><a href="home.html">หน้าหลัก</a></li>
-          <li><a href="detail.html">ยื่นสอบหัวข้อ / สอบจบ</a></li>
-          <li><a href="project_progress.html">ตรวจสอบความคืบหน้า</a></li>
+          <li><a href="../home.html">หน้าหลัก</a></li>
+          <li><a href="../detail.html">ยื่นสอบหัวข้อ</a></li>
+          <li><a href="home.html">ตรวจสอบความคืบหน้า</a></li>
         </ul>
       </div>
     </div>
