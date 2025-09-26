@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ระบบการจัดการข้อมูลโครงงานพิเศษ และโครงงานสหกิจ</title>
-    <link rel="icon" type="image/x-icon" href="/images/icon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/icon/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -23,6 +23,10 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/66746747ed.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -54,11 +58,19 @@
             </label>
           </div>
           <div class="flex-1 px-2">
-            <p class="btn btn-ghost text-lg font-light hover:font-bold">ระบบการจัดการข้อมูลโครงงานพิเศษ</p>
+            <p class="btn btn-ghost text-lg font-light hover:font-bold">
+              ระบบการจัดการข้อมูลโครงงานพิเศษ
+            </p>
           </div>
           <div class="flex items-center space-x-3">
             <ul class="hidden lg:flex menu menu-horizontal px-1">
-              <li><a href="homde.html" class="font-bold underline underline-offset-4">หน้าหลัก</a></li>
+              <li>
+                <a
+                  href="home.html"
+                  class="font-bold underline underline-offset-4"
+                  >หน้าหลัก</a
+                >
+              </li>
               <li><a href="detail.html">ยื่นสอบหัวข้อ / สอบจบ</a></li>
             </ul>
             <div class="dropdown dropdown-end mr-3">
@@ -88,20 +100,100 @@
           </div>
         </div>
         <!-- Page content here -->
-        <main class="bg-base-200 min-h-screen">
-          <div class="flex gap-x-6">
-            <div class="bg-base-300 h-screen w-72 px-4 py-6">
+        <main class="bg-base-200 min-h-full">
+          <div class="flex gap-x-6 h-full">
+            <div class="bg-base-300 h-full w-72 px-4 py-6">
               <div class="flex flex-col gap-y-2">
-                <div class="btn hover:bg-info hover:text-info-content border border-neutral">
+                <div
+                  class="btn hover:bg-info hover:text-info-content border border-neutral"
+                >
                   ดาวน์โหลดคู่มือการจัดทำเล่มโครงงาน
                 </div>
                 <div class="divider"></div>
-                <a href="" class="hover:text-info duration-200">- ตรวจสอบตารางสอบจบ</a>
-                <a href="" class="hover:text-info duration-200">- ตรวจสอบตารางสอบหัวข้อ</a>
+                <a href="" class="hover:text-info duration-200"
+                  >- ตรวจสอบตารางสอบจบ</a
+                >
+                <a href="" class="hover:text-info duration-200"
+                  >- ตรวจสอบตารางสอบหัวข้อ</a
+                >
               </div>
             </div>
-            <div class="bg-blue-500 h-screen">
-              
+            <div class="h-screen p-6 w-full">
+              <div class="flex justify-between">
+                <h1 class="text-2xl font-bold mb-6">
+                  ตารางโครงงานพิเศษ / โครงงานสหกิจ
+                </h1>
+                <a href="detail.html">
+                  <button class="btn btn-secondary">
+                    <i class="fa-solid fa-plus"></i>
+                    เพิ่มโครงงาน
+                  </button>
+                </a>
+              </div>
+              <div
+                class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 h-full"
+              >
+                <table class="table table-zebra">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>ชื่อโครงงาน</th>
+                      <th width="40%">รายละเอียด</th>
+                      <th>ประเภทโครงงาน</th>
+                      <th>ครูที่ปรึกษา</th>
+                      <th class="text-center">สถานะ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>โครงงานพิเศษ</td>
+                      <td>ผศ.ดร.นิติการ นาคเจือทอง</td>
+                      <td class="text-center">
+                        <button
+                          class="bg-success text-success-content p-2 rounded w-16"
+                        >
+                          ผ่าน
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>Hart Hagerty</td>
+                      <td>Desktop Support Technician</td>
+                      <td>โครงงานสหกิจ</td>
+                      <td>ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</td>
+                      <td class="text-center">
+                        <button
+                          class="bg-warning text-warning-content p-2 rounded w-16"
+                        >
+                          แก้ไข
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>Brice Swyre</td>
+                      <td>Tax Accountant</td>
+                      <td>โครงงานพิเศษ</td>
+                      <td>อ.ดร.วัชรชัย คงศิริวัฒนา</td>
+                      <td class="text-center">
+                        <button
+                          class="bg-error text-error-content p-2 rounded w-16"
+                        >
+                          ไม่ผ่าน
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </main>
