@@ -65,16 +65,12 @@
           <div class="flex items-center space-x-3">
             <ul class="hidden lg:flex menu menu-horizontal px-1">
               <li>
-                <a href="home.html">หน้าหลัก</a>
-              </li>
-              <li>
                 <a
-                  href="detail.html"
-                  class="font-bold underline underline-offset-4"
-                  >ยื่นสอบหัวข้อ</a
+                  href="home.html"
+                  >หน้าหลัก</a
                 >
               </li>
-              <li><a href="./after/home.html">ตรวจสอบความคืบหน้า</a></li>
+              <li><a href="./after/home.html">รายงานความคืบหน้า</a></li>
             </ul>
             <div class="dropdown dropdown-end mr-3">
               <div
@@ -84,7 +80,7 @@
               >
                 <div class="w-10 rounded-full">
                   <img
-                    src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                    src="../images/Mr.Nitigan.jpg"
                     alt="profile"
                   />
                 </div>
@@ -104,8 +100,8 @@
           <div class="flex gap-x-6 min-h-screen h-full">
             <div class="p-6 w-full">
               <div class="flex justify-between">
-                <h1 class="text-2xl font-bold mb-6">ยื่นสอบหัวข้อ</h1>
-                <span class="badge badge-warning badge-xl">แก้ไขรายละเอียด</span>
+                <h1 class="text-2xl font-bold mb-6">รายละเอียดโครงงาน</h1>
+                <span class="badge badge-soft badge-neutral badge-xl">30/9/68</span>
               </div>
               <form class="form-control">
                 <fieldset
@@ -113,13 +109,14 @@
                 >
                   <div class="grid grid-cols-3 gap-4">
                     <div class="flex flex-col space-y-2">
-                      <label class="label font-bold text-base-content text-base">ชื่อโครงงาน</label
+                      <label class="label font-bold text-base-content text-base"
+                        >ชื่อโครงงาน</label
                       >
                       <input
                         type="text"
                         class="input input-bordered w-full"
-                        value="Hart Hagerty"
                         placeholder="ชื่อโครงงาน"
+                        value="Cy Ganderton"
                         required
                       />
                     </div>
@@ -138,7 +135,7 @@
                         <label class="label font-bold text-base-content text-base">ประเภทโครงงาน</label>
                         <select class="select w-full">
                             <option>โครงงานพิเศษ</option>
-                            <option selected>โครงงานสหกิจ</option>
+                            <option>โครงงานสหกิจ</option>
                         </select>
                     </div>
                   </div>
@@ -195,48 +192,17 @@
                       class="textarea textarea-bordered w-full h-32"
                       placeholder="รายละเอียด"
                       required
-                    >Desktop Support Technician</textarea>
+                    >Quality Control Specialist</textarea>
                   </div>
-                  <div class="flex flex-col space-y-2">
-                    <label class="label font-bold text-base-content text-base"
-                      >เลือกอาจารย์ที่ปรึกษา</label
-                    >
-                    <select class="select w-full">
-                      <option selected>รศ.ดร.อนิราช มิ่งขวัญ</option>
-                      <option>ผศ.อรบุษป์ วุฒิกมลชัย</option>
-                      <option>ผศ.ดร.บีสุดา ดาวเรือง</option>
-                      <option>ผศ.ดร.ขนิษฐา นามี</option>
-                      <option>อ.ดร.กาญจน ณ ศรีธะ</option>
-                      <option>ผศ.นพดล บูรณ์กุศล</option>
-                      <option>ผศ.จสต.นพเก้า ทองใบ</option>
-                      <option>ผศ.ดร.นิติการ นาคเจือทอง</option>
-                      <option>ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
-                      <option>ผศ.นิมิต ศรีคำทา</option>
-                      <option>อ.ดร.พิทย์พิมล ชูรอด</option>
-                      <option>ผศ.ดร.พาฝัน ดวงไพศาล</option>
-                      <option>อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
-                      <option>ผศ.พีระศักดิ์ เสรีกุล</option>
-                      <option>ผศ.สมชัย เชียงพงศ์พันธุ์</option>
-                      <option>ผศ.ดร.สุปีติ กุลจันทร์</option>
-                      <option>ผศ.สิวาลัย จินเจือ</option>
-                      <option>ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
-                      <option>ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
-                      <option>อ.ดร.ศิรินทรา แว่วศรี</option>
-                      <option>อ.ดร.วัชรชัย คงศิริวัฒนา</option>
-                      <option>ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
-                      <option>รศ.ดร.ยุพิน สรรพคุณ</option>
-                    </select>
-                  </div>
-                  <div class="space-y-2">
-                    <label class="label font-bold text-base-content text-base">ไฟล์</label>
-                    <input
-                      type="file"
-                      class="file-input file-input-bordered w-full"
-                    />
+                  <div class="ml-4">
+                    <h3 class="font-bold text-primary text-lg hover:underline hover:underline-offset-4 hover:cursor-pointer">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        ดูเอกสารแนบ : 
+                    </h3>
                   </div>
                   <div class="flex justify-end space-x-2">
                     <a href="home.html" class="btn btn-error text-white">ยกเลิก</a>
-                    <a href="home.html" class="btn btn-info">ยื่นสอบหัวข้อ</a>
+                    <a href="progress.html" class="btn btn-info">ยื่นสอบหัวข้อ</a>
                   </div>
                 </fieldset>
               </form>

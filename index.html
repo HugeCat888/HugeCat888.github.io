@@ -26,9 +26,12 @@
     <script src="https://kit.fontawesome.com/66746747ed.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="flex flex-col h-screen items-center justify-center space-y-6">
-      <h1 class="text-3xl">เข้าสู่ระบบ</h1>
-      <div class="card bg-base-200 w-96 shadow-sm">
+    <div class="flex flex-col h-screen items-center justify-center space-y-6 bg-gradient-to-br from-blue-500 via-purple-300 to-purple-600">
+      <div class="flex flex-col items-center space-y-2 text-white dark:text-black">
+        <h1 class="text-3xl font-bold text-neutral">ระบบโครงงานพิเศษ และโครงงานสหกิจ</h1>
+        <h2 class="text-2xl font-semibold text-neutral">ภาควิชาเทคโนโลยีสารสนเทศ</h2>
+      </div>
+      <div class="card bg-base-200 w-96 shadow-md">
         <form class="card-body">
           <fieldset class="fieldset">
             <legend class="fieldset-legend"><i class="fa-solid fa-user"></i> ชื่อผู้ใช้</legend>
@@ -49,13 +52,22 @@
             />
           </fieldset>
           <div class="flex w-full flex-col space-y-3">
-            <a href="user/home.html" class="btn btn-primary text-white"
+            <a href="user/home.html" class="btn btn-accent accent-content"
               ><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</a
             >
-            <div class="divider text-sm text-gray-500">for admin</div>
-            <a href="admin/home.html" class="btn btn-primary text-white"
-              ><i class="fa-solid fa-user-tie"></i> ICIT Login</a
-            >
+            <div class="divider text-sm text-gray-500">ICIT</div>
+            <div class="flex w-full gap-x-4">
+              <div class="flex-1">
+                <a href="admin/home.html" class="btn btn-accent accent-content w-full">
+                  <i class="fa-solid fa-user-group"></i> Admin
+                </a>
+              </div>
+              <div class="flex-1">
+                <a href="ajan/home.html" class="btn btn-accent accent-content w-full">
+                  <i class="fa-solid fa-user-tie"></i> Ajan
+                </a>
+              </div>
+            </div>
           </div>
         </form>
       </div>
