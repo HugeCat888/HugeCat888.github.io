@@ -63,15 +63,6 @@
             </a>
           </div>
           <div class="flex items-center space-x-3">
-            <ul class="hidden lg:flex menu menu-horizontal px-1">
-              <li>
-                <a
-                  href="home.html"
-                  >หน้าหลัก</a
-                >
-              </li>
-              <li><a href="./after/home.html">รายงานความคืบหน้า</a></li>
-            </ul>
             <div class="dropdown dropdown-end mr-3">
               <div
                 tabindex="0"
@@ -101,7 +92,7 @@
             <div class="p-6 w-full">
               <div class="flex justify-between">
                 <h1 class="text-2xl font-bold mb-6">รายละเอียดโครงงาน</h1>
-                <span class="badge badge-soft badge-neutral badge-xl">30/9/2568</span>
+                <span class="badge badge-neutral badge-xl">30/09/2568</span>
               </div>
               <form class="form-control">
                 <fieldset
@@ -149,7 +140,8 @@
                         disabled
                       />
                     </div>
-                    <div>
+                    <!-- other user -->
+                    <!-- <div>
                       <label class="input w-full">
                         <input
                           type="text"
@@ -184,14 +176,23 @@
                           >optional</span
                         >
                       </label>
-                    </div>
+                    </div> -->
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="font-bold text-base">สถานะความคืบหน้าตอนนี้ : 20 %</p>
+                    <button class="btn btn-primary rounded-full tooltip" data-tip="add progress">
+                      <i class="fa-regular fa-plus"></i> เพิ่มความก้าวหน้า
+                    </button>
+                  </div>
+                  <div>
+                    <progress class="progress progress-success w-full" value="20" max="100"></progress>
                   </div>
                   <div class="flex flex-col space-y-2">
                     <label class="label font-bold text-base-content text-base">รายละเอียดโครงงาน</label>
                     <textarea
                       class="textarea textarea-bordered w-full h-32"
                       placeholder="รายละเอียด"
-                      required
+                      disabled
                     >Quality Control Specialist</textarea>
                   </div>
                   <div class="flex w-full justify-end">
@@ -200,8 +201,13 @@
                         ดูเอกสารแนบ : ไฟล์รายงาน.PDF
                     </button>
                   </div>
+                  <div class="flex flex-col space-y-2">
+                    <label class="label font-bold text-base-content text-base">เพิ่มความคิดเห็น</label>
+                    <textarea class="textarea textarea-bordered w-full h-32" placeholder="เพิ่มความเห็น"></textarea>
+                  </div>
                   <div class="flex justify-end space-x-2">
-                    <a href="home.html" class="btn btn-primary text-white"><i class="fa-solid fa-home"></i> กลับหน้าหลัก</a>
+                    <a href="home.html" class="btn btn-error text-white"><i class="fa-solid fa-x"></i> ยกเลิก</a>
+                    <a href="home.html" class="btn btn-primary text-white"><i class="fa-solid fa-check"></i> รายงานความคืบหน้า</a>
                   </div>
                 </fieldset>
               </form>
