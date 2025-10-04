@@ -33,33 +33,25 @@
                     </label>
                 </div>
                 <div class="flex-1 px-2">
-                    <a href="../home.html" class="btn btn-ghost text-lg font-light hover:font-bold">
+                    <a href="date.html" class="btn btn-ghost text-lg font-light hover:font-bold">
                         ระบบการจัดการข้อมูลโครงงานพิเศษ
                     </a>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <ul class="hidden lg:flex menu menu-horizontal px-1">
-                        <li>
-                            <a href="../home.html" class="font-bold underline underline-offset-4">หน้าหลัก</a>
-                        </li>
-                        <li><a href="../detail.html">ยื่นสอบหัวข้อ</a></li>
-                        <li><a href="../after/home.html">ตรวจสอบความคืบหน้า</a></li>
-                    </ul>
                     <div class="dropdown dropdown-end mr-3">
                         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                             <div class="w-10 rounded-full">
-                                <img src="https://img.daisyui.com/images/profile/demo/5@94.webp" alt="profile" />
+                                <img src="https://tlc.uni.net.th/tlc36/file/resource/10-1.jpg" alt="profile" />
                             </div>
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 border border-base-300 rounded-box z-1 mt-4 w-52 p-2 shadow text-base-content">
                             <li><a href="#">Settings</a></li>
-                            <li><a href="/index.html">Logout</a></li>
+                            <li><a href="../index.html">Logout</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
             <!-- Main Content -->
             <main class="p-6 bg-base-200 min-h-screen">
                 <div class="card bg-base-100 shadow-lg border border-base-300">
@@ -70,7 +62,6 @@
                             <div>
                                 <h1 class="text-3xl font-bold">รายละเอียดโครงงาน</h1>
                             </div>
-                            <div class="badge badge-primary badge-lg">โครงงานที่ 1</div>
                         </div>
 
                         <!-- Grid Layout -->
@@ -113,11 +104,11 @@
                                     <div>
                                         <label class="label-text font-medium">ผู้จัดทำโครงงาน (3 คน)</label>
                                         <div class="space-y-2">
-                                            <input type="text" value="1. นายสมชาย ใจดี (6806022510xxx)"
+                                            <input type="text" value="1. นายวุฒิพงษ์ วังรัตน์ (6806022510xxx)"
                                                 class="input input-bordered input-sm w-full bg-gray-50" readonly />
-                                            <input type="text" value="2. นายสมศักดิ์ วิทยาการ (6806022510xxx)"
+                                            <input type="text" value="2. นายพลากร แพทย์นุเคราะห์ (6806022510xxx)"
                                                 class="input input-bordered input-sm w-full bg-gray-50" readonly />
-                                            <input type="text" value="3. นางสาว สมหญิง เทคโนโลยี (6806022510xxx)"
+                                            <input type="text" value="3. นายกิตติทัษน์ พุ่มเจริญ (6806022510xxx)"
                                                 class="input input-bordered input-sm w-full bg-gray-50" readonly />
                                         </div>
                                     </div>
@@ -131,18 +122,18 @@
                                         <div class="space-y-3">
                                             <div class="flex items-center gap-2">
                                                 <span class="badge badge-secondary">ประธาน</span>
-                                                <input type="text" placeholder="กรอกชื่อประธาน"
-                                                    class="input input-bordered input-sm flex-1" />
+                                                <input type="text" value="ผศ.ดร.กฤษฎากร  บุดดาจันทร์"
+                                                    class="input input-bordered input-sm flex-1" readonly />
                                             </div>
                                             <div class="flex items-center gap-2">
                                                 <span class="badge badge-accent">กรรมการ</span>
-                                                <input type="text" placeholder="กรอกชื่อกรรมการ"
-                                                    class="input input-bordered input-sm flex-1" />
+                                                <input type="text" value="รศ.ดร.อนิราช มิ่งขวัญ"
+                                                    class="input input-bordered input-sm flex-1" readonly />
                                             </div>
                                             <div class="flex items-center gap-2">
                                                 <span class="badge badge-accent">กรรมการ</span>
-                                                <input type="text" placeholder="กรอกชื่อกรรมการ"
-                                                    class="input input-bordered input-sm flex-1" />
+                                                <input type="text" value="ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ"
+                                                    class="input input-bordered input-sm flex-1" readonly />
                                             </div>
                                         </div>
                                     </div>
@@ -175,25 +166,9 @@
 
                             <div class="form-control">
                                 <label class="label-text font-medium">วันที่ยื่นสอบ</label>
-                                <input type="date" class="input input-bordered w-60" value="" />
+                                <span class="input input-bordered w-60 justify-center">24/9/2568</span>
                             </div>
                         </section>
-
-                        <!-- Actions -->
-                        <div class="flex justify-end gap-4 mt-10">
-                            <a href="../home.html" class="btn btn-outline btn-error">
-                                <i class="fas fa-times mr-2"></i> ยกเลิก
-                            </a>
-                            <a href="../home.html" class="btn btn-success text-white">
-                                <i class="fas fa-check mr-2"></i> ตกลง
-                            </a>
-                        </div>
                     </div>
                 </div>
             </main>
-        </div>
-
-</body>
-
-
-</html>
