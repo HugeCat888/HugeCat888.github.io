@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ระบบการจัดการข้อมูลโครงงานพิเศษ และโครงงานสหกิจ</title>
+  <link rel="icon" type="image/x-icon" href="/images/icon/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/66746747ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="drawer">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="navbar bg-gradient-to-r from-blue-500 to-purple-600 w-full text-primary-content">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block h-6 w-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2">
+          <a href="home.html" class="btn btn-ghost text-lg font-light hover:font-bold">
+            ระบบการจัดการข้อมูลโครงงานพิเศษ
+          </a>
+        </div>
+        <div class="flex items-center space-x-3">
+          <ul class="hidden lg:flex menu menu-horizontal px-1">
+            <li>
+              <a href="home.html" class="font-bold underline underline-offset-4">หน้าหลัก</a>
+            </li>
+            <li><a href="detail.html">ยื่นสอบหัวข้อ / สอบจบ</a></li>
+            <li><a href="./after/home.html">ตรวจสอบความคืบหน้า</a></li>
+          </ul>
+          <div class="dropdown dropdown-end mr-3">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="https://img.daisyui.com/images/profile/demo/5@94.webp" alt="profile" />
+              </div>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 border border-base-300 rounded-box z-1 mt-4 w-52 p-2 shadow text-base-content">
+              <li><a href="#">Settings</a></li>
+              <li><a href="../index.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="h-screen p-6 w-full">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold mb-6">แดชบอร์ดผู้ดูแลระบบ</h1>
+
+        </div>
+
+        <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 h-full">
+          <table class="table table-zebra table-fixed w-full">
+            <thead>
+              <tr>
+                <th class="w-12"></th>
+                <th class="w-1/5">ชื่อโครงงาน</th>
+                <th class="w-2/6">รายละเอียด</th>
+                <th class="w-1/6">ประเภท</th>
+                <th class="w-1/5">อาจารย์ที่ปรึกษา</th>
+                <th class="w-28 text-center">สถานะ</th>
+                <th class="w-36 text-center">การจัดการ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td class="truncate">ระบบจัดการโครงงาน</td>
+                <td class="truncate">ระบบช่วยติดตามและจัดการโครงงาน</td>
+                <td>โครงงานพิเศษ</td>
+                <td class="truncate">ผศ.ดร.นิติการ นาคเจือทอง</td>
+                <td class="text-center">
+                  <span class="badge badge-success">เสร็จสิ้น</span>
+                </td>
+                <td class="text-center space-x-2">
+                  <a href="/admin/Edit projects/Edit project1.html">
+                    <button class="btn btn-info btn-sm">แก้ไข</button>
+                  </a>
+                  <button class="btn btn-error btn-sm">ลบ</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <td class="truncate">ระบบลงทะเบียน</td>
+                <td class="truncate">จัดการการลงทะเบียนสอบ</td>
+                <td>โครงงานสหกิจ</td>
+                <td class="truncate">อ.ดร.วัชรชัย คงศิริวัฒนา</td>
+                <td class="text-center">
+                  <span class="badge badge-warning px-3 py-2 text-sm whitespace-nowrap">
+                    กำลังดำเนินการ
+                  </span>
+                </td>
+                <td class="text-center space-x-2">
+                  <a href="/admin/Edit projects/Edit project2.html">
+                    <button class="btn btn-info btn-sm">แก้ไข</button>
+                  </a>
+                  <button class="btn btn-error btn-sm">ลบ</button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </main>
+  </div>
+
+</body>
+
+</html>

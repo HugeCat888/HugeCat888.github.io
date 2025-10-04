@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ระบบการจัดการข้อมูลโครงงานพิเศษ และโครงงานสหกิจ</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/66746747ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+            <!-- Navbar -->
+            <div class="navbar bg-gradient-to-r from-blue-500 to-purple-600 w-full text-primary-content">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block h-6 w-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div class="flex-1 px-2">
+                    <a href="../home.html" class="btn btn-ghost text-lg font-light hover:font-bold">
+                        ระบบการจัดการข้อมูลโครงงานพิเศษ
+                    </a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <ul class="hidden lg:flex menu menu-horizontal px-1">
+                        <li>
+                            <a href="../home.html" class="font-bold underline underline-offset-4">หน้าหลัก</a>
+                        </li>
+                        <li><a href="../detail.html">ยื่นสอบหัวข้อ</a></li>
+                        <li><a href="../after/home.html">ตรวจสอบความคืบหน้า</a></li>
+                    </ul>
+                    <div class="dropdown dropdown-end mr-3">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="https://img.daisyui.com/images/profile/demo/5@94.webp" alt="profile" />
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 border border-base-300 rounded-box z-1 mt-4 w-52 p-2 shadow text-base-content">
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="/index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="p-6 bg-base-200 min-h-screen">
+                <div class="card bg-base-100 shadow-lg border border-base-300">
+                    <div class="card-body">
+
+                        <!-- Header -->
+                        <div class="flex justify-between items-center mb-8">
+                            <div>
+                                <h1 class="text-3xl font-bold">รายละเอียดโครงงาน</h1>
+                            </div>
+                            <div class="badge badge-primary badge-lg">โครงงานที่ 2</div>
+                        </div>
+
+                        <!-- Grid Layout -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Project Info -->
+                            <section class="space-y-5">
+                                <h2 class="text-xl font-semibold border-b pb-2 flex items-center gap-2">
+                                    <i class="fa-solid fa-book text-blue-500"></i> ข้อมูลโครงงาน
+                                </h2>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="label-text font-medium">ชื่อโครงงาน</label>
+                                        <input type="text" value="ระบบลงทะเบียน"
+                                            class="input input-bordered w-full bg-gray-50" readonly />
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-medium">ประเภทโครงงาน</label>
+                                        <input type="text" value="โครงงานสหกิจ"
+                                            class="input input-bordered w-full bg-gray-50" readonly />
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-medium">สาขาวิชา</label>
+                                        <input type="text" value="เทคโนโลยีและการจัดการอุตสาหกรรม"
+                                            class="input input-bordered w-full bg-gray-50" readonly />
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-medium">รายละเอียดโครงงาน</label>
+                                        <textarea class="textarea textarea-bordered w-full h-32 bg-gray-50"
+                                            readonly>ระบบนี้ถูกพัฒนาขึ้นเพื่อการจัดการข้อมูลการลงทะเบียน โดยมีวัตถุประสงค์เพื่อเพิ่มประสิทธิภาพในการทำงาน ลดความซ้ำซ้อนของข้อมูล และอำนวยความสะดวกให้แก่ผู้ใช้งานระบบ</textarea>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Members -->
+                            <section class="space-y-5">
+                                <h2 class="text-xl font-semibold border-b pb-2 flex items-center gap-2">
+                                    <i class="fa-solid fa-users text-purple-500"></i> ผู้จัดทำและคณะกรรมการ
+                                </h2>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="label-text font-medium">ผู้จัดทำโครงงาน (3 คน)</label>
+                                        <div class="space-y-2">
+                                            <input type="text" value="1. นายสมชาย ใจดี (6806022510xxx)"
+                                                class="input input-bordered input-sm w-full bg-gray-50" readonly />
+                                            <input type="text" value="2. นายสมศักดิ์ วิทยาการ (6806022510xxx)"
+                                                class="input input-bordered input-sm w-full bg-gray-50" readonly />
+                                            <input type="text" value="3. นางสาว สมหญิง เทคโนโลยี (6806022510xxx)"
+                                                class="input input-bordered input-sm w-full bg-gray-50" readonly />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-medium">อาจารย์ที่ปรึกษา</label>
+                                        <input type="text" value="อ.ดร.วัชรชัย คงศิริวัฒนา"
+                                            class="input input-bordered w-full bg-gray-50" readonly />
+                                    </div>
+                                    <div>
+                                        <label class="label-text font-medium">คณะกรรมการสอบ</label>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center gap-2">
+                                                <span class="badge badge-secondary">ประธาน</span>
+                                                <input type="text" placeholder="กรอกชื่อประธาน"
+                                                    class="input input-bordered input-sm flex-1" />
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="badge badge-accent">กรรมการ</span>
+                                                <input type="text" placeholder="กรอกชื่อกรรมการ"
+                                                    class="input input-bordered input-sm flex-1" />
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="badge badge-accent">กรรมการ</span>
+                                                <input type="text" placeholder="กรอกชื่อกรรมการ"
+                                                    class="input input-bordered input-sm flex-1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="divider my-8">
+                            <h2 class="text-xl font-semibold">การยื่นขอสอบ</h2>
+                        </div>
+
+                        <!-- Exam Section -->
+                        <section class="space-y-6">
+                            <div class="form-control">
+                                <label class="label-text font-medium">เลือกประเภทการสอบ</label>
+                                <div class="flex gap-6 mt-2">
+                                    <label class="flex items-center cursor-pointer gap-2">
+                                        <input type="radio" name="examType" value="topic" class="radio radio-primary"
+                                            checked />
+                                        <span>สอบหัวข้อโครงงาน</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer gap-2">
+                                        <input type="radio" name="examType" value="final" class="radio radio-primary"
+                                            disabled />
+                                        <span>สอบจบโครงงาน</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label-text font-medium">วันที่ยื่นสอบ</label>
+                                <input type="date" class="input input-bordered w-60" value="" />
+                            </div>
+                        </section>
+
+                        <!-- Actions -->
+                        <div class="flex justify-end gap-4 mt-10">
+                            <a href="../home.html" class="btn btn-outline btn-error">
+                                <i class="fas fa-times mr-2"></i> ยกเลิก
+                            </a>
+                            <a href="../home.html" class="btn btn-success text-white">
+                                <i class="fas fa-check mr-2"></i> ตกลง
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+</body>
+
+</html>
