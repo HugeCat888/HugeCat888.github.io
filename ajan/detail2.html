@@ -66,7 +66,7 @@
           <ul class="hidden lg:flex menu menu-horizontal px-1">
             <li><a href="home.html" class="font-bold underline underline-offset-4">อาจารย์ที่ปรึกษา</a></li>
             <li><a href="director/home.html">กรรมการ</a></li>
-          </ul>
+          </ul>            
             <div class="dropdown dropdown-end mr-3">
               <div
                 tabindex="0"
@@ -111,8 +111,9 @@
                         type="text"
                         class="input input-bordered w-full"
                         placeholder="ชื่อโครงงาน"
-                        value="Cy Ganderton"
+                        value="Hart Hagerty"
                         required
+                        readonly
                       />
                     </div>
                     <div class="flex flex-col space-y-2">
@@ -129,8 +130,8 @@
                     <div class="flex flex-col space-y-2">
                         <label class="label font-bold text-base-content text-base">ประเภทโครงงาน</label>
                         <select class="select w-full">
-                            <option>โครงงานพิเศษ</option>
                             <option>โครงงานสหกิจ</option>
+                            <option>โครงงานพิเศษ</option>
                         </select>
                     </div>
                   </div>
@@ -140,7 +141,7 @@
                       <input
                         type="text"
                         class="input input-bordered w-full"
-                        value="นายกิตติทัษน์ พุ่มเจริญ"
+                        value="นางสาว สมหญิง ใจดี"
                         disabled
                       />
                     </div>
@@ -183,13 +184,13 @@
                     </div> -->
                   </div>
                   <div class="flex justify-between items-center">
-                    <p class="font-bold text-base">สถานะความคืบหน้าตอนนี้ : 20 %</p>
+                    <p class="font-bold text-base">สถานะความคืบหน้าตอนนี้ : 0 %</p>
                     <button class="btn btn-primary rounded-full tooltip" data-tip="add progress">
                       <i class="fa-regular fa-plus"></i> เพิ่มความก้าวหน้า
                     </button>
                   </div>
                   <div>
-                    <progress class="progress progress-success w-full" value="20" max="100"></progress>
+                    <progress class="progress progress-success w-full" value="0" max="100"></progress>
                   </div>
                   <div class="flex flex-col space-y-2">
                     <label class="label font-bold text-base-content text-base">รายละเอียดโครงงาน</label>
@@ -197,7 +198,7 @@
                       class="textarea textarea-bordered w-full h-32"
                       placeholder="รายละเอียด"
                       disabled
-                    >Quality Control Specialist</textarea>
+                    >Desktop Support Technician</textarea>
                   </div>
                   <div class="flex w-full justify-end">
                     <button class="btn btn-error font-bold text-white hover:underline hover:underline-offset-4 hover:cursor-pointer">
